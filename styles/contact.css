@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yrsa', serif;
+}
+
+body {
+    background-image: url(../images/pattern-runes-brown-2x.png);
+}
+
+header {
+    background-color: white;
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_divider_ocher.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    height: 16vh;
+}
+
+.navegacion {
+    height: 6vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.supercontenedor {
+    display: flex;
+}
+
+/* CONTENEDORES HEREDEROS */
+.contenedor1 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 2vh;
+    width: 50vw;
+    height: 60vh;
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2vh;
+    width: 50vw;
+    height: 60vh;
+}
+
+.contenedor3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 160vh;
+}
+
+/* CONTENIDOS */
+.contenido1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #b99f65;
+    background-color: #18473d;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    padding-top: 2vh;
+    width: 30vw;
+    height: 52vh;
+    overflow-y: scroll;
+}
+
+.contenido2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #b99f65;
+    background-color: #18473d;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    width: 30vw;
+    height: 52vh;
+    overflow-y: scroll;
+}
+
+.consentimiento {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px white solid;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    text-align: left;
+    width: 20vw;
+    height: 15vh;
+    overflow-y: scroll;
+}
+
+.contenido3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #b99f65;
+    background-color: #18473d;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    margin-top: 1vh;
+    padding: 1vh;
+    width: 35vw;
+    height: 20vh;
+}
+
+.contenido4 {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    margin-top: 1vh;
+    padding: 1vh;
+    width: 50vw;
+    height: 20vh;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+/* IMAGEN ADAPTATIVA */
+.responsive {
+    width: 40%;
+    height: auto;
+}
+
+/* MENÚ DE NAVEGACIÓN (codepen.io) */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+li {
+    float: left;
+    margin-right: 1px;
+}
+
+li a {
+    display: block;
+    min-width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #2f3036;
+    background: #b99f65;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+li:hover a {
+    background: #18473d;
+    color: white;
+}
+
+li:hover ul a {
+    background: #b99f65;
+    color: #2f3036;
+    height: 50px;
+    line-height: 50px;
+}
+
+li:hover ul a:hover {
+    background: #18473d;
+    color: white;
+}
+
+li ul {
+    display: none;
+}
+
+li ul li {
+    display: block;
+    float: none;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+ul li a:hover+.hidden,
+.hidden:hover {
+    display: block;
+}
+
+footer {
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_divider_hardware.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 5vh;
+}
+
+/* ANIMACIÓN AL HACER FOCUS SOBRE LOS CAMPOS TIPO TEXTO */
+input[type=text] {
+    border: 2px solid #b99f65;
+    font-size: medium;
+    border-radius: 4px;
+    transition: 1s ease-in-out;
+}
+
+input[type=text]:focus {
+    transform: scale(1.2);
+}
+
+/* ANIMACIÓN AL PASAR POR ENCIMA DE LOS BOTONES "ENVIAR" */
+input[type=submit] {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    width: 5vw;
+    height: 4vh;
+    transition: .3s;
+}
+
+input[type=submit]:hover {
+    background-color: #b99f65;
+    box-shadow: 0 0 0 2px #2C2422;
+    color: #2C2422;
+    font-size: large;
+}
+
+/* Div para centrar el botón Enviar del segundo formulario */
+#centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1vh;
+}
+
+/* MENÚ EN CASCADA PARA PANTALLAS MUY PEQUEÑAS */
+@media screen and (max-width: 563px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .supercontenedor{
+        margin-top: 18vh;
+    }
+}
+
+/* ESTILO PARA MÓVILES */
+@media screen and (max-width: 768px) {
+
+    .supercontenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor1 {
+        justify-content: center;
+        width: 95%;
+        height: auto;
+    }
+
+    .contenido1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .contenedor2 {
+        justify-content: center;
+        width: 95%;
+        height: auto;
+    }
+
+    .contenido2 {
+        width: 90%;
+        height: auto;
+    }
+
+    .consentimiento {
+        width: 90%;
+        height: auto;
+    }
+
+    .contenedor3 {
+        width: 100%;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+    .contenido3 {
+        width: 90%;
+        height: auto;
+    }
+
+    .imagen {
+        width: 90%;
+        height: auto;
+    }
+
+    input[type=submit] {
+        background-color: whitesmoke;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1vh;
+        width: 10vw;
+        height: 4vh;
+        transition: .3s;
+    }
+}
+
+/* ESTILO PARA TABLETS */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .supercontenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor1 {
+        justify-content: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .contenido1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .contenedor2 {
+        justify-content: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .contenido2 {
+        width: 90%;
+        height: auto;
+    }
+
+    .consentimiento {
+        width: 90%;
+        height: auto;
+    }
+
+    .contenedor3 {
+        width: 100%;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+    .contenido3 {
+        width: 60%;
+        height: auto;
+    }
+
+    .imagen {
+        width: 90%;
+        height: auto;
+    }
+
+    input[type=submit] {
+        background-color: whitesmoke;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1vh;
+        width: 10vw;
+        height: 4vh;
+        transition: .3s;
+    }
+}

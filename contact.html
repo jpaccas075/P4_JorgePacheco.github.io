@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yrsa&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header><h1>Contacto</h1></header>
+    <nav class="navegacion">
+        <ul id="menu">
+            <li><a href="./index.html"><h4>Inicio</h4></a></li>
+            <li>
+                <a href="./world.html"><h4>Mundo ￬</h4></a>
+                <ul class="hidden">
+                    <li><a href="./characters.html"><h4>Personajes</h4></a></li>
+                </ul>
+            </li>
+            <li><a href="./gallery.html"><h4>Galería</h4></a></li>
+            <li><a href="./contact.html"><h4>Contacto</h4></a></li>
+        </ul>
+    </nav>
+    <section class="supercontenedor">
+        <section class="contenedor1">
+            <div class="contenido1">
+                <form><b><h3>DATOS PERSONALES</h3></b><br><br>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" pattern="[A-Z][a-záéíóú]+(\s[a-z]+){0,2}(\s[A-Z][a-záéíóú]+)*" size="30" required><br><br>
+                    
+                    <label for="apellidos">Apellidos:</label><br>
+                    <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-záéíóú]+(\s[a-z]+){0,2}(\s[A-Z][a-záéíóú]+)*" size="30" required><br><br>
+                    
+                    <label for="fechanac">Fecha de nacimiento:</label><br>
+                    <input type="text" id="fechanac" name="fechanac" placeholder="00/00/0000" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" size="30" required><br><br>
+                    
+                    <label for="tel">Teléfono:</label><br>
+                    <input type="text" id="tel" name="tel" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" size="30" required><br><br>
+                    
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="text" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" size="30" required><br><br>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+        <section class="contenedor2">
+            <div class="contenido2"><b><h3>¡AVISO IMPORTANTE!</h3></b><br>
+                En virtud de lo establecido en la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos 
+                digitales, se va a proceder a la recogida de datos personales con fines exclusivamente educativos.<br><br>
+                <b><h3>CONSENTIMIENTO INFORMADO</h3></b><br>
+                    <div class="consentimiento">
+                        <form>
+                            <input type="checkbox" id="acepto" name="consent" value="Acepto">
+                            <label for="acepto">He leído y acepto el Aviso y la política de privacidad</label><br><br>
+                                
+                            <input type="checkbox" id="autorizo" name="consent" value="Autorización">
+                            <label for="autorizo">Autorizo al autor de la página el uso de los datos personales contenidos en este formulario</label>
+                        </form>
+                    </div>
+            </div>
+        </section>
+    </section>
+    <section class="contenedor3">
+        <div class="contenido3">
+            <form>
+                <p>¿Crees que es interesante la temática del videojuego?</p><br>
+                <input type="radio" id="si" name="pref" value="Si">
+                <label for="si">Sí</label><br>
+                
+                <input type="radio" id="no" name="pref" value="No">
+                <label for="no">No</label><br>
+                
+                <input type="radio" id="poco" name="pref" value="Poco">
+                <label for="poco">Un poco</label><br>
+                
+                <input type="radio" id="otro" name="pref" value="Otro">
+                <label for="otro">Prefiero ocupar el tiempo en otras cosas</label>
+            </form>
+        </div>
+        <div class="contenido3">
+            <form>
+                <p>¿Qué tribu te ha parecido más curiosa?</p><br>
+                <select id="tribu" name="tribu">
+                    <option>Orni</option>
+                    <option>Zora</option>
+                    <option>Gerudo</option>
+                    <option>Goron</option>
+                    <option>Ninguna</option>
+                </select>
+            </form>
+        </div>
+        <div class="contenido3">
+            <form>
+                <p>¿Qué zona de Hyrule explorarías primero?</p><br>
+                <input type="radio" id="cielo" name="zona" value="Cielo">
+                <label for="cielo">El cielo</label><br>
+                
+                <input type="radio" id="superficie" name="zona" value="Superficie">
+                <label for="superficie">La superficie</label><br>
+                
+                <input type="radio" id="subsuelo" name="zona" value="Subsuelo">
+                <label for="subsuelo">El subsuelo</label><br>
+                
+                <input type="radio" id="ninguno" name="zona" value="Ninguno">
+                <label for="ninguno">Ninguna me llama la atención</label>
+            </form>
+        </div>
+        <div class="contenido3">
+            <form>
+                <p>¿Recomendarías el título?</p><br>
+                <input type="checkbox" id="si" name="recomendado" value="Sí">
+                <label for="si">Sí</label><br>
+                
+                <input type="checkbox" id="no" name="recomendado" value="No">
+                <label for="no">No</label><br>
+                
+                <input type="checkbox" id="amigos" name="recomendado" value="Amigos">
+                <label for="amigos">A mi grupo de amigos</label><br>
+                
+                <input type="checkbox" id="familia" name="recomendado" value="Familia">
+                <label for="familia">A familiares</label>
+            </form>
+        </div>
+        <div class="imagen"><img src="./images/link-2x.png" class="responsive"></div>
+        <div class="contenido4">
+            <form>
+                <textarea name="message" rows="5" cols="50">Sugerencias de mejora. Gracias por tu colaboración.</textarea><br>
+                <div id="centrado"><input type="submit" value="Enviar"></div>
+            </form>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>

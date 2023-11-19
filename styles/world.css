@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yrsa', serif;
+}
+
+body {
+    background-image: url(../images/pattern-circles-ocher-2x.png);
+    background-repeat: repeat;
+}
+
+header {
+    background-color: white;
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_divider_ocher.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+    height: 16vh;
+}
+
+.navegacion {
+    background-color: #18473d;
+    height: 6vh;
+}
+
+/* TEXTO DE INTRODUCCIÓN */
+.intro {
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_top_circle_black.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-color: #18473d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+    text-align: center;
+    color: white;
+    height: 20vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.supercontenedor {
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_amiibo_top.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CONTENEDORES HEREDEROS */
+.contenedor1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENIDOS */
+.contenido {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+}
+
+.contenido2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #18473d;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    margin: 2vh;
+    padding: 1vh;
+    width: 45vw;
+    height: 20vh;
+    overflow-y: scroll;
+}
+
+/* IMÁGENES ADAPTATIVAS */
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_top_circle_black.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 5vh;
+}
+
+/* MENÚ DE NAVEGACIÓN (codepen.io) */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+li {
+    float: left;
+    margin-right: 1px;
+}
+
+li a {
+    display: block;
+    min-width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #2f3036;
+    background: #b99f65;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+li:hover a {
+    background: #18473d;
+    color: white;
+}
+
+li:hover ul a {
+    background: #b99f65;
+    color: #2f3036;
+    height: 50px;
+    line-height: 50px;
+}
+
+li:hover ul a:hover {
+    background: #18473d;
+    color: white;
+}
+
+li ul {
+    display: none;
+}
+
+li ul li {
+    display: block;
+    float: none;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+ul li a:hover+.hidden,
+.hidden:hover {
+    display: block;
+}
+
+/* MENÚ EN CASCADA PARA PANTALLAS MUY PEQUEÑAS */
+@media screen and (max-width: 563px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro{
+        display: flex;
+        padding-top: 16vh;
+    }
+}
+
+/* ESTILO PARA MÓVILES */
+@media screen and (max-width: 768px) {
+    .supercontenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenedor2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenedor3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido {
+        width: 90vw;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .contenido2 {
+        width: 70vw;
+    }
+
+    .responsive {
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ESTILO PARA TABLETS */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .supercontenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenedor2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenedor3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido {
+        width: 90vw;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .contenido2 {
+        width: 70vw;
+    }
+
+    .responsive {
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+}

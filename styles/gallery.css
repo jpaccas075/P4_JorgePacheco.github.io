@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yrsa', serif;
+}
+
+body {
+    background-image: url(../images/pattern-circles-dark-green-2x.png);
+}
+
+header {
+    background-color: white;
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_divider_ocher.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    height: 16vh;
+}
+
+.navegacion {
+    height: 6vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.supercontenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDORES HEREDEROS */
+.contenedor1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32vw;
+    height: 200vh;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32vw;
+    height: 200vh;
+}
+
+.contenedor3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32vw;
+    height: 200vh;
+}
+
+/* CONTENIDO */
+.contenido {
+    border-radius: 10px;
+    display: flex;
+    margin-top: 5vh;
+    width: 28vw;
+}
+
+/* IMÁGENES ADAPTATIVAS */
+.responsive {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid #b99f65;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* PEQUEÑA ANIMACIÓN AL HACER HOVER */
+.responsive:hover {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+footer {
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_divider_ivory.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 5vh;
+}
+
+/* MENÚ DE NAVEGACIÓN (codepen.io) */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+li {
+    float: left;
+    margin-right: 1px;
+}
+
+li a {
+    display: block;
+    min-width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #2f3036;
+    background: #b99f65;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+li:hover a {
+    background: #18473d;
+    color: white;
+}
+
+li:hover ul a {
+    background: #b99f65;
+    color: #2f3036;
+    height: 50px;
+    line-height: 50px;
+}
+
+li:hover ul a:hover {
+    background: #18473d;
+    color: white;
+}
+
+li ul {
+    display: none;
+}
+
+li ul li {
+    display: block;
+    float: none;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+ul li a:hover+.hidden,
+.hidden:hover {
+    display: block;
+}
+
+/* MENÚ EN CASCADA PARA PANTALLAS MUY PEQUEÑAS */
+@media screen and (max-width: 563px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .supercontenedor{
+        margin-top: 15vh;
+    }
+}
+
+/* ESTILO PARA MÓVILES */
+@media screen and (max-width: 768px) {
+
+    .supercontenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenedor2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenedor3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido {
+        width: 90vw;
+    }
+}
+
+/* ESTILO PARA TABLETS */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .supercontenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenedor2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenedor3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido {
+        width: 90vw;
+    }
+}

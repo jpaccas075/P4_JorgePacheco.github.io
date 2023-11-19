@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yrsa', serif;
+}
+
+body {
+    background-image: url(../images/pattern-circles-brown-2x.png);
+}
+
+header {
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_divider_ocher.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+    height: 16vh;
+}
+
+.navegacion {
+    height: 6vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url(../images/pattern-circles-ivory-2x.png);
+    border-radius: 10px;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+}
+
+/* CONTENIDOS */
+.contenido1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+    height: 30vh;
+}
+
+.interno1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.contenido2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #b99f65;
+    border-radius: 5px;
+    background-color: #18473d;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 1vw;
+    width: 60vw;
+    height: 20vh;
+    overflow-y: scroll;
+}
+
+.contenido3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+    height: 40vh;
+}
+
+.contenido4 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #b99f65;
+    border-radius: 5px;
+    background-color: #18473d;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 1vw;
+    width: 60vw;
+    height: 32vh;
+    overflow-y: scroll;
+}
+
+.contenido5 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #b99f65;
+    border-radius: 5px;
+    background-color: #18473d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    padding: 1vw;
+    width: 25vw;
+    height: 32vh;
+}
+
+/* IMÁGENES ADAPTATIVAS */
+.responsive {
+    width: 35%;
+    height: auto;
+}
+
+/* VÍDEO ADAPTATIVO */
+#vidresponsive {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-image: url(../images/TheLegendOfZeldaTearsOfTheKingdom_divider_hardware.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 5vh;
+}
+
+/* MENÚ DE NAVEGACIÓN (codepen.io) */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+/* Crea la lista horizontal con espacio */
+li {
+    float: left;
+    margin-right: 1px;
+}
+
+/* Estilos para los enlaces */
+li a {
+    display: block;
+    min-width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #2f3036;
+    background: #b99f65;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+/* Estado hover sobre los enlaces */
+li:hover a {
+    background: #18473d;
+    color: white;
+}
+
+/* Estilo del dropdown */
+li:hover ul a {
+    background: #b99f65;
+    color: #2f3036;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* Estilo hover del dropdown */
+li:hover ul a:hover {
+    background: #18473d;
+    color: white;
+}
+
+/* Oculta el dropdown */
+li ul {
+    display: none;
+}
+
+/* Pone el dropdown en vertical */
+li ul li {
+    display: block;
+    float: none;
+}
+
+/* Previene el texto wrapping */
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+/* Aparece el dropdown al hacer hover */
+ul li a:hover+.hidden,
+.hidden:hover {
+    display: block;
+}
+
+/* MENÚ EN CASCADA PARA PANTALLAS MUY PEQUEÑAS */
+@media screen and (max-width: 563px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor{
+        margin-top: 20vh;
+    }
+}
+
+/* ESTILO PARA MÓVILES */
+@media screen and (max-width: 768px) {
+
+    .contenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido4 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido5 {
+        margin: 1vh;
+        width: 80%;
+        height: auto;
+    }
+
+    .responsive {
+        width: 80%;
+        height: auto;
+    }
+
+    #vidresponsive {
+        width: 60%;
+        height: auto;
+    }
+}
+
+/* ESTILO PARA TABLETS */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .contenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido4 {
+        width: 80%;
+        height: auto;
+    }
+
+    .contenido5 {
+        margin: 1vh;
+        width: 80%;
+        height: auto;
+    }
+
+    .responsive {
+        width: 80%;
+        height: auto;
+    }
+
+    #vidresponsive {
+        width: 60%;
+        height: auto;
+    }
+}

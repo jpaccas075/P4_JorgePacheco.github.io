@@ -161,10 +161,11 @@ ul li a:hover+.hidden,
         padding: 0;
         display: flex;
         flex-direction: column;
+        width: 100vw;
     }
 
     .supercontenedor{
-        margin-top: 15vh;
+        margin-top: 20vh;
     }
 }
 
